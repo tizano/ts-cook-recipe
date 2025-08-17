@@ -1,0 +1,10 @@
+{
+  "name": "@ts-cook-recipe/cook-recipe-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@ts-cook-recipe/cook-recipe"
+    ]
+  }
+}
