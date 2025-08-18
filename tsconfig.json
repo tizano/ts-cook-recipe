@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/cook-recipe"
+    },
+    {
+      "path": "./tools/tailwind-sync-plugin"
+    },
+    {
+      "path": "./packages/shared-ui"
     }
   ]
 }

@@ -10,5 +10,19 @@
   "devDependencies": {
     "@tanstack/react-router-devtools": "^1.131.25",
     "@tanstack/router-plugin": "^1.131.25"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "syncGenerators": [
+          "@ts-cook-recipe/tailwind-sync-plugin:update-tailwind-globs"
+        ]
+      },
+      "serve": {
+        "syncGenerators": [
+          "@ts-cook-recipe/tailwind-sync-plugin:update-tailwind-globs"
+        ]
+      }
+    }
   }
 }
