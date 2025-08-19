@@ -5,18 +5,19 @@ import { join } from 'path';
 export async function updateTailwindGlobsGenerator(
   tree: Tree
 ): Promise<SyncGeneratorResult> {
-  const appName = '@aishop/shop';
+  const appName = '@ts-cook-recipe/cook-recipe';
 
   const projectGraph = await createProjectGraphAsync();
-  const shopProject = projectGraph.nodes[appName];
+  const cookProject = projectGraph.nodes[appName];
+  console.log(`Project graph for ${appName}:`, cookProject);
 
-  if (!shopProject) {
+  if (!cookProject) {
     return {
-      outOfSyncMessage: 'Shop project not found in project graph',
+      outOfSyncMessage: 'Cook recipe project not found in project graph',
     };
   }
 
-  // Get all dependencies of the shop app
+  // Get all dependencies of the cook app
   const dependencies = new Set<string>();
   const queue = [appName];
   const visited = new Set<string>();
@@ -49,7 +50,7 @@ export async function updateTailwindGlobsGenerator(
   sourceDirectives.sort();
 
   // Read current styles.css
-  const stylesPath = 'apps/shop/src/styles.css';
+  const stylesPath = 'apps/cook-recipe/src/styles.css';
   const currentContent = tree.read(stylesPath)?.toString() || '';
 
   // Find where to insert the @source directives (after @import "tailwindcss";)

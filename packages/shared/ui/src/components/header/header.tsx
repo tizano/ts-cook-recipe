@@ -1,7 +1,9 @@
 export function Header() {
   return (
     <header>
-      <h2>Im th header : Tudum</h2>
+      <div className="flex">
+        <h2 className="font-bold text-blue-800">Im th header : Tudum</h2>
+      </div>
     </header>
   );
 }

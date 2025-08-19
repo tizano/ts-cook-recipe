@@ -64,7 +64,6 @@
   },
   "workspaces": [
     "apps/*",
-    "apps/cook-recipe/tools/*",
     "tools/*",
     "packages/shared/*"
   ]

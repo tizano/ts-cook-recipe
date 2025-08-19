@@ -13,5 +13,11 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     }
+  },
+  "nx": {
+    "tags": [
+      "scope:shared",
+      "type:ui"
+    ]
   }
 }

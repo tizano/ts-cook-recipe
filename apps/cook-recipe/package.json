@@ -3,15 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.12",
-    "tailwindcss": "^4.1.12"
-  },
-  "devDependencies": {
-    "@tanstack/react-router-devtools": "^1.131.25",
-    "@tanstack/router-plugin": "^1.131.25"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "nx": {
+    "tags": [
+      "type:app"
+    ],
     "targets": {
       "build": {
         "syncGenerators": [
