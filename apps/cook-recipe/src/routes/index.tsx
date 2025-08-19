@@ -1,4 +1,5 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, Outlet } from '@tanstack/react-router';
+import { AppLayout } from '@ts-cook-recipe/shared-ui';
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -6,8 +7,8 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="p-2">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <AppLayout>
+      <Outlet />
+    </AppLayout>
   );
 }
